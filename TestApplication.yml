@@ -1,5 +1,15 @@
-# Config data exposed by config server
+spring:
+  application:
+    name: TestApplication
 
-info:
-  foo: bar
-  someList: [2, 3, 7]
+server:
+  port: 8086
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+hello:
+  rel: bsjghdajsh
