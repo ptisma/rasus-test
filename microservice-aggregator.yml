@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: microservice-aggregator
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+hello:
+  rel: dj
+
+eureka:
+  instance:
+    hostname: x1
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 20
+  client:
+    service-url:
+      defaultZone: http://localhost:9090/eureka/
+server:
+  port: 4000
