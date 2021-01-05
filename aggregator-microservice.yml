@@ -8,7 +8,7 @@ management:
       exposure:
         include: '*'
 
-measurementUnit:C
+measurementUnit : C
 
 eureka:
   instance:
